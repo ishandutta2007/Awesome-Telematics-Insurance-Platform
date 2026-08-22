@@ -1,6 +1,5 @@
 # Awesome-Telematics-Insurance-Platform
 
-Markdown
 ## Top Telematics Insurance Platform Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
@@ -13,7 +12,7 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 
 **Open-source emphasis**: Fully featured open-source equivalents to enterprise telematics-insurance platforms are still relatively uncommon. Therefore, this section is heavily expanded with open-source telematics applications, UBI/PHYD scoring projects, GPS and sensor-processing libraries, OBD-II/CAN tools, fleet-management platforms, routing infrastructure, and machine-learning components that can be combined into a self-hosted telematics-insurance stack.
 
-A particularly relevant example is **insurance-telematics**, an MIT-licensed project that converts GPS/accelerometer trip data into GLM-ready driving-risk features using Hidden Markov Models. :contentReference[oaicite:0]{index=0}
+A particularly relevant example is **insurance-telematics**, an MIT-licensed project that converts GPS/accelerometer trip data into GLM-ready driving-risk features using Hidden Markov Models.
 
 Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites or GitHub repositories.
 
@@ -28,91 +27,48 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-- **[Cambridge Mobile Telematics](https://www.cmtelematics.com/)**  
-  Smartphone and connected-vehicle telematics platform focused on driving risk, crash detection, driver engagement, and usage-based insurance.
-
-- **[Octo Telematics](https://www.octotelematics.com/)**  
-  Connected-mobility and insurance-telematics platform providing driving-data collection, behavioral analytics, risk scoring, claims intelligence, and UBI capabilities.
-
-- **[Arity](https://arity.com/)**  
-  Allstate-owned mobility-data and insurance analytics company providing driving insights, risk analytics, telematics data, and insurance solutions.
-
-- **[TrueMotion](https://www.truemotion.com/)**  
-  Telematics and driving-data technology focused on mobile-based driving behavior, risk scoring, distracted-driving detection, and usage-based insurance.
-
-- **[Samsara](https://www.samsara.com/)**  
-  Connected-operations and telematics platform providing vehicle tracking, driver behavior analytics, safety scoring, video telematics, and insurance-oriented fleet risk capabilities.
-
-- **[Zendrive](https://www.zendrive.com/)**  
-  Smartphone-based mobility and telematics platform providing driving behavior, risk analytics, crash detection, and insurance-oriented driving insights.
-
-- **[DriveQuant](https://www.drivequant.com/)**  
-  Smartphone telematics platform for insurers and mobility companies that collects driving data and converts it into driving-risk indicators, crash detection, driver coaching, and connected-insurance insights. :contentReference[oaicite:1]{index=1}
-
-- **[IMS — Intelligent Mechatronic Systems](https://www.intellimec.com/)**  
-  Telematics technology provider focused on connected-vehicle data, usage-based insurance, fleet applications, and driving behavior analytics.
-
-- **[Mojio](https://www.moj.io/)**  
-  Connected-car and telematics platform providing vehicle data, GPS tracking, diagnostics, driver insights, and APIs for mobility and insurance applications.
-
-- **[Greater Than](https://www.greater-than.eu/)**  
-  AI-powered driving-risk and fuel-efficiency analytics platform using driving and vehicle data for insurance, mobility, fleet, and sustainability applications.
-
-### Additional Notable SaaS / Hosted Options
-
-- **[Damoov](https://www.damoov.com/)**  
-  Telematics technology provider offering smartphone-based telematics, driving analytics, fleet tracking, and mobility APIs.
-
-- **[Nauto](https://www.nauto.com/)**  
-  AI-powered vehicle and driver safety platform using telematics, computer vision, and behavioral analytics to identify driving risk.
-
-- **[Cambridge Mobile Telematics DriveWell](https://www.cmtelematics.com/)**  
-  Telematics ecosystem combining smartphone sensors, connected vehicles, crash detection, driver scoring, and engagement.
-
-- **[Verisk Telematics](https://www.verisk.com/)**  
-  Insurance-data and analytics ecosystem with telematics and driving-risk capabilities for insurers.
-
-- **[LexisNexis Risk Solutions Telematics](https://risk.lexisnexis.com/)**  
-  Insurance analytics ecosystem providing driving-data, risk, identity, and underwriting intelligence.
-
-- **[HUK-COBURG Telematik Plus](https://www.huk.de/)**  
-  Insurance telematics program using connected driving information to support behavior-based insurance.
-
-- **[Vulog](https://www.vulog.com/)**  
-  Connected mobility platform supporting vehicle telematics, fleet operations, shared mobility, and connected-vehicle data.
-
-- **[Geotab](https://www.geotab.com/)**  
-  Large-scale connected-vehicle and fleet telematics platform providing vehicle data, driver behavior, GPS, safety, and analytics capabilities that can support insurance programs.
-
-- **[Samsara Connected Operations](https://www.samsara.com/)**  
-  Connected-vehicle ecosystem combining telematics, cameras, sensors, driver safety, fleet management, and operational analytics.
-
-- **[Otonomo](https://www.ridecell.com/)**  
-  Connected-vehicle data ecosystem providing APIs and data infrastructure for mobility and automotive applications.
-
-- **[Wejo](https://www.wejo.com/)**  
-  Connected-vehicle data platform focused on processing and commercializing vehicle-generated data for mobility and automotive use cases.
+| Platform | Category / Focus | Key Capabilities | Pricing (Starting Tier / Rates) | Free Tier & Free Trial Limits |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Cambridge Mobile Telematics (CMT)](https://www.cmtelematics.com/)** | Smartphone & Tag Telematics | DriveWell platform, crash detection, driver risk scoring, claim alerting | Starts from ~$1.50–$3.00/driver/month (enterprise volume tier) | 30-day proof-of-concept (PoC) carrier pilot + interactive sandbox demo |
+| **[Octo Telematics](https://www.octotelematics.com/)** | Connected Mobility & Insurance | Digital Driver platform, claims intelligence, UBI risk scoring, crash validation | Starts from ~$20–$35/vehicle/month (telematics device + cloud subscription bundle) | 30-day "Digital Driver™ Try Before You Buy" pilot for policyholder risk pre-scoring |
+| **[Arity](https://arity.com/)** | Mobility Intelligence & Scoring | Arity IQ at-quote driver risk score, driving engine SDK, crash detection | Starts from ~$0.10–$0.25 per score lookup / API transaction (volume dependent) | 30-day sandbox API integration access for certified carrier partners |
+| **[TrueMotion](https://www.truemotion.com/)** | Mobile Telematics & UBI | Distracted driving analytics, trip scoring, crash response *(Acquired by CMT)* | Integrated into CMT DriveWell (formerly started at ~$2.00–$4.00/user/month) | 30-day enterprise evaluation pilot through CMT DriveWell platform |
+| **[Samsara](https://www.samsara.com/)** | Fleet & Video Telematics | Real-time GPS, AI dash cams, safety risk scores, fleet insurance integrations | Starts at $27/vehicle/month for core telematics ($40–$60/mo with AI dash cams; hardware $99–$548/unit; 3-yr term) | 30-day risk-free hardware trial program (hardware returnable within 30 days) |
+| **[Zendrive](https://www.zendrive.com/)** | Smartphone Telematics SDK | Mobile sensor risk scoring, collision detection, aggressive driving alerts | Starts at $4.00/driver/month for enterprise fleets / UBI programs | 30-day pilot testing program and developer sandbox access |
+| **[DriveQuant](https://www.drivequant.com/)** | Smartphone Telematics & White-Label Apps | DriveKit SDK, driver coaching, eco-driving, smartphone crash detection | Starts at €0.50–€1.50/active driver/month (starter tier package for pilot fleets) | 100% Free DriveKit Demo App (iOS/Android) for live testing + 30-day sandbox API trial upon request |
+| **[IMS (Intelligent Mechatronic Systems)](https://www.intellimec.com/)** | Connected Car & UBI Platform | DriveSync platform, OneApp mobile SDK, OBD/OEM data normalization, claims scoring | Starts from ~$15–$30/vehicle/month for data ingestion & risk scoring | Enterprise pilot package offering up to 5 self-install OBD test dongles and 30-day portal access |
+| **[Mojio](https://www.moj.io/)** | Connected Car & Fleet Tracking | Force Fleet Tracking, OBD-II data platform, vehicle health, driver behavior | Starts at $10/vehicle/month for Force Fleet Tracking (hardware separate) | Free developer sandbox access with virtual vehicle simulator, mobile SDKs, and REST API access |
+| **[Greater Than](https://www.greater-than.eu/)** | AI Driver Risk & Eco Scoring | Econaisance AI, crash probability modeling, climate impact analytics | Starts at €1.00–€2.50/active driver/month for AI scoring API | 30-day historical data pilot analysis & guided AI score simulator demo |
+| **[Damoov](https://www.damoov.com/)** | Telematics SDK & DataHub | Smartphone telematics SDK, Zenroad app, auto trip tracking, driving scorecards | Starter plan at $250/month (up to 100 drivers; $1–$2/extra driver/mo); Growth at $1,000/month (400 drivers) | 90-day free developer sandbox (no credit card required) + Free open-source Zenroad reference app + Free tier for academic/research use |
+| **[Nauto](https://www.nauto.com/)** | AI Fleet Safety & Video Telematics | Real-time distracted driving alerts, AI dual-facing dash cams, collision prevention | Starts at $25/unit/month plus $375 one-time hardware fee per vehicle (1-year minimum contract) | 30-day pilot evaluation program for qualified enterprise fleets |
+| **[Verisk Telematics](https://www.verisk.com/)** | InsurTech Data Exchange | Telematics Data Prefill, driver risk scoring, OEM connected car data network | Starts from ~$0.50–$2.00 per inquiry / prefill transaction for licensed insurers | Carrier sandbox environment & retrospective portfolio backtesting pilot |
+| **[LexisNexis Risk Solutions](https://risk.lexisnexis.com/)** | Telematics Risk Analytics | Telematics OnDemand, DriveMetrics scoring, OEM data exchange, claims automation | Starts from ~$0.75–$2.50 per report / policyholder verification | Carrier-assisted sandbox access & 30-day historical validation pilot study |
+| **[HUK-COBURG Telematik Plus](https://www.huk.de/)** | Consumer UBI Program | Windshield sensor + "HUK Mein Auto" app, driving score calculation, cash discounts | €0 / year extra cost (Guarantees 5% initial discount and up to 30% annual policy discount) | 100% Free permanent program for policyholders, includes complimentary physical telematics sensor |
+| **[Vulog](https://www.vulog.com/)** | Shared Mobility & Fleet Telematics | AiMA platform, connected fleet management, carsharing telematics, risk analytics | Starts from €15–€35/vehicle/month for connected vehicle fleet management | 30-day structured sandbox demo environment & guided solution simulation |
+| **[Geotab](https://www.geotab.com/)** | Enterprise Fleet Telematics | MyGeotab platform, GO9 devices, driver safety scorecards, insurance marketplace | Starts at $20–$40/vehicle/month via authorized resellers (hardware ~$80–$150/unit) | 30-day pilot trial program with evaluation demo hardware units |
+| **[Otonomo (Ridecell)](https://www.ridecell.com/)** | Connected Vehicle Data Platform | OEM vehicle data aggregation, fleet automation, driving behavior APIs | Starts from $10–$25/vehicle/month for connected data and fleet workflow automation | 30-day developer sandbox environment & enterprise PoC integration |
+| **[Wejo](https://www.wejo.com/)** | Connected Car Data Exchange *(Historical)* | High-volume connected vehicle data feeds, traffic intelligence, collision data | Inactive / Defunct (Assets liquidated post-May 2023 administration) | Inactive (Historical service formerly offered limited sandbox hackathon keys) |
 
 ## Open-Source GitHub Projects
 
 ### UBI / Insurance Risk Scoring
 
 - **[insurance-telematics](https://github.com/burning-cost/insurance-telematics)**  
-  Open-source MIT-licensed project that converts raw GPS and accelerometer trip data into GLM-ready insurance risk features using Hidden Markov Models. It specifically targets UBI/PAYD/PHYD use cases and emphasizes explainable, auditable risk scoring. :contentReference[oaicite:2]{index=2}
+  Open-source MIT-licensed project that converts raw GPS and accelerometer trip data into GLM-ready insurance risk features using Hidden Markov Models. It specifically targets UBI/PAYD/PHYD use cases and emphasizes explainable, auditable risk scoring.
 
 - **[Fleet Management System — Automotive Telematics](https://github.com/sachnaror/fleet-management-system)**  
-  Open-source fleet-telematics platform built with FastAPI, SQLAlchemy, OBD-II, CAN bus, GPS, and a live dashboard. It includes driver-behavior monitoring, harsh-braking/speeding detection, trip analytics, and an explicit insurance-telematics use case. :contentReference[oaicite:3]{index=3}
+  Open-source fleet-telematics platform built with FastAPI, SQLAlchemy, OBD-II, CAN bus, GPS, and a live dashboard. It includes driver-behavior monitoring, harsh-braking/speeding detection, trip analytics, and an explicit insurance-telematics use case.
 
 - **[Fleet Management System — Automotive Telematics](https://github.com/santoshiimind/fleet-management-system)**  
-  Open-source Python-based telematics system supporting GPS tracking, OBD-II diagnostics, CAN-bus data, driver behavior monitoring, alerts, and safety scoring. :contentReference[oaicite:4]{index=4}
+  Open-source Python-based telematics system supporting GPS tracking, OBD-II diagnostics, CAN-bus data, driver behavior monitoring, alerts, and safety scoring.
 
 ### Mobile Telematics / Smartphone UBI
 
 - **[Zenroad iOS Telematics App](https://github.com/Mobile-Telematics/TelematicsApp-iOS)**  
-  Open-source iOS telematics application designed for UBI, safe-driving, shared mobility, tracking, and driver-coaching applications. It includes trip tracking, driving analytics, leaderboards, rewards, and optional OBD connectivity. :contentReference[oaicite:5]{index=5}
+  Open-source iOS telematics application designed for UBI, safe-driving, shared mobility, tracking, and driver-coaching applications. It includes trip tracking, driving analytics, leaderboards, rewards, and optional OBD connectivity.
 
 - **[Zenroad Android Telematics App](https://github.com/Mobile-Telematics/TelematicsApp-Android)**  
-  Open-source Android telematics application suitable for UBI, safe-driving, fleet, tracking, and mobility applications. It provides a mobile telematics engine, trip details, driving scorecards, and optional OBD integration. :contentReference[oaicite:6]{index=6}
+  Open-source Android telematics application suitable for UBI, safe-driving, fleet, tracking, and mobility applications. It provides a mobile telematics engine, trip details, driving scorecards, and optional OBD integration.
 
 - **[OwnTracks](https://github.com/owntracks/recorder)**  
   Open-source location-tracking ecosystem useful for collecting smartphone location data that can form part of a mobile telematics pipeline.
