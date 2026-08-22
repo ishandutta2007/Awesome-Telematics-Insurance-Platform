@@ -1,316 +1,373 @@
-# Awesome-Telematics-Insurance-Platform
+<div align="center">
 
-## Top Telematics Insurance Platform Ecosystem
+![Awesome Telematics Insurance Platform](assets/telematics-insurance-banner.svg)
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on Usage-Based Insurance (UBI), Pay-As-You-Drive (PAYD), Pay-How-You-Drive (PHYD), Driving Risk Analytics & Connected Insurance*  
-**Last updated: August 2026**
+# 🚗 Awesome Telematics Insurance Platform 🛡️
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Telematics Insurance**. These platforms collect and analyze vehicle and driver data from smartphones, OBD devices, connected cars, telematics units, GPS, accelerometers, and other sensors to support usage-based insurance, driver risk scoring, crash detection, claims intelligence, personalized pricing, driver coaching, and connected-insurance products.
+### *The Definitive Directory of SaaS Platforms & Open-Source Projects for Usage-Based Insurance (UBI), PHYD, PAYD, Driver Risk Analytics & Connected Insurance*
 
-**Examples** include Cambridge Mobile Telematics, Octo Telematics, Arity, TrueMotion, Samsara Insurance, Zendrive, DriveQuant, IMS (Intelligent Mechatronic Systems), Mojio, and Greater Than — among the notable commercial platforms in the category.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Telematics-Insurance-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Telematics-Insurance-Platform?style=flat-square&color=gold" alt="Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Telematics-Insurance-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Telematics-Insurance-Platform?style=flat-square&color=blue" alt="Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Telematics-Insurance-Platform/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Telematics-Insurance-Platform/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-**Open-source emphasis**: Fully featured open-source equivalents to enterprise telematics-insurance platforms are still relatively uncommon. Therefore, this section is heavily expanded with open-source telematics applications, UBI/PHYD scoring projects, GPS and sensor-processing libraries, OBD-II/CAN tools, fleet-management platforms, routing infrastructure, and machine-learning components that can be combined into a self-hosted telematics-insurance stack.
+---
 
-A particularly relevant example is **insurance-telematics**, an MIT-licensed project that converts GPS/accelerometer trip data into GLM-ready driving-risk features using Hidden Markov Models.
+**Last updated: August 2026** • *Curated with ❤️ for InsurTech Engineers, Actuaries, Data Scientists & Mobility Developers*
 
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites or GitHub repositories.
+</div>
 
-## Table of Contents
+---
 
-- [SaaS/Hosted Platforms](#saashosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [Additional Strong Open-Source Options](#additional-strong-open-source-options)
-- [Building a Custom Open-Source Telematics Insurance Platform](#building-a-custom-open-source-telematics-insurance-platform)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+## 🔍 Overview & SEO Highlights
 
-## SaaS/Hosted Platforms
+This repository tracks notable **SaaS platforms** and **open-source projects** for **Telematics Insurance**, **Usage-Based Insurance (UBI)**, **Pay-As-You-Drive (PAYD)**, **Pay-How-You-Drive (PHYD)**, and **Connected Vehicle Risk Analytics**.
 
-| Platform | Category / Focus | Key Capabilities | Pricing (Starting Tier / Rates) | Free Tier & Free Trial Limits |
-| :--- | :--- | :--- | :--- | :--- |
-| **[Cambridge Mobile Telematics (CMT)](https://www.cmtelematics.com/)** | Smartphone & Tag Telematics | DriveWell platform, crash detection, driver risk scoring, claim alerting | Starts from ~$1.50–$3.00/driver/month (enterprise volume tier) | 30-day proof-of-concept (PoC) carrier pilot + interactive sandbox demo |
-| **[Octo Telematics](https://www.octotelematics.com/)** | Connected Mobility & Insurance | Digital Driver platform, claims intelligence, UBI risk scoring, crash validation | Starts from ~$20–$35/vehicle/month (telematics device + cloud subscription bundle) | 30-day "Digital Driver™ Try Before You Buy" pilot for policyholder risk pre-scoring |
-| **[Arity](https://arity.com/)** | Mobility Intelligence & Scoring | Arity IQ at-quote driver risk score, driving engine SDK, crash detection | Starts from ~$0.10–$0.25 per score lookup / API transaction (volume dependent) | 30-day sandbox API integration access for certified carrier partners |
-| **[TrueMotion](https://www.truemotion.com/)** | Mobile Telematics & UBI | Distracted driving analytics, trip scoring, crash response *(Acquired by CMT)* | Integrated into CMT DriveWell (formerly started at ~$2.00–$4.00/user/month) | 30-day enterprise evaluation pilot through CMT DriveWell platform |
-| **[Samsara](https://www.samsara.com/)** | Fleet & Video Telematics | Real-time GPS, AI dash cams, safety risk scores, fleet insurance integrations | Starts at $27/vehicle/month for core telematics ($40–$60/mo with AI dash cams; hardware $99–$548/unit; 3-yr term) | 30-day risk-free hardware trial program (hardware returnable within 30 days) |
-| **[Zendrive](https://www.zendrive.com/)** | Smartphone Telematics SDK | Mobile sensor risk scoring, collision detection, aggressive driving alerts | Starts at $4.00/driver/month for enterprise fleets / UBI programs | 30-day pilot testing program and developer sandbox access |
-| **[DriveQuant](https://www.drivequant.com/)** | Smartphone Telematics & White-Label Apps | DriveKit SDK, driver coaching, eco-driving, smartphone crash detection | Starts at €0.50–€1.50/active driver/month (starter tier package for pilot fleets) | 100% Free DriveKit Demo App (iOS/Android) for live testing + 30-day sandbox API trial upon request |
-| **[IMS (Intelligent Mechatronic Systems)](https://www.intellimec.com/)** | Connected Car & UBI Platform | DriveSync platform, OneApp mobile SDK, OBD/OEM data normalization, claims scoring | Starts from ~$15–$30/vehicle/month for data ingestion & risk scoring | Enterprise pilot package offering up to 5 self-install OBD test dongles and 30-day portal access |
-| **[Mojio](https://www.moj.io/)** | Connected Car & Fleet Tracking | Force Fleet Tracking, OBD-II data platform, vehicle health, driver behavior | Starts at $10/vehicle/month for Force Fleet Tracking (hardware separate) | Free developer sandbox access with virtual vehicle simulator, mobile SDKs, and REST API access |
-| **[Greater Than](https://www.greater-than.eu/)** | AI Driver Risk & Eco Scoring | Econaisance AI, crash probability modeling, climate impact analytics | Starts at €1.00–€2.50/active driver/month for AI scoring API | 30-day historical data pilot analysis & guided AI score simulator demo |
-| **[Damoov](https://www.damoov.com/)** | Telematics SDK & DataHub | Smartphone telematics SDK, Zenroad app, auto trip tracking, driving scorecards | Starter plan at $250/month (up to 100 drivers; $1–$2/extra driver/mo); Growth at $1,000/month (400 drivers) | 90-day free developer sandbox (no credit card required) + Free open-source Zenroad reference app + Free tier for academic/research use |
-| **[Nauto](https://www.nauto.com/)** | AI Fleet Safety & Video Telematics | Real-time distracted driving alerts, AI dual-facing dash cams, collision prevention | Starts at $25/unit/month plus $375 one-time hardware fee per vehicle (1-year minimum contract) | 30-day pilot evaluation program for qualified enterprise fleets |
-| **[Verisk Telematics](https://www.verisk.com/)** | InsurTech Data Exchange | Telematics Data Prefill, driver risk scoring, OEM connected car data network | Starts from ~$0.50–$2.00 per inquiry / prefill transaction for licensed insurers | Carrier sandbox environment & retrospective portfolio backtesting pilot |
-| **[LexisNexis Risk Solutions](https://risk.lexisnexis.com/)** | Telematics Risk Analytics | Telematics OnDemand, DriveMetrics scoring, OEM data exchange, claims automation | Starts from ~$0.75–$2.50 per report / policyholder verification | Carrier-assisted sandbox access & 30-day historical validation pilot study |
-| **[HUK-COBURG Telematik Plus](https://www.huk.de/)** | Consumer UBI Program | Windshield sensor + "HUK Mein Auto" app, driving score calculation, cash discounts | €0 / year extra cost (Guarantees 5% initial discount and up to 30% annual policy discount) | 100% Free permanent program for policyholders, includes complimentary physical telematics sensor |
-| **[Vulog](https://www.vulog.com/)** | Shared Mobility & Fleet Telematics | AiMA platform, connected fleet management, carsharing telematics, risk analytics | Starts from €15–€35/vehicle/month for connected vehicle fleet management | 30-day structured sandbox demo environment & guided solution simulation |
-| **[Geotab](https://www.geotab.com/)** | Enterprise Fleet Telematics | MyGeotab platform, GO9 devices, driver safety scorecards, insurance marketplace | Starts at $20–$40/vehicle/month via authorized resellers (hardware ~$80–$150/unit) | 30-day pilot trial program with evaluation demo hardware units |
-| **[Otonomo (Ridecell)](https://www.ridecell.com/)** | Connected Vehicle Data Platform | OEM vehicle data aggregation, fleet automation, driving behavior APIs | Starts from $10–$25/vehicle/month for connected data and fleet workflow automation | 30-day developer sandbox environment & enterprise PoC integration |
-| **[Wejo](https://www.wejo.com/)** | Connected Car Data Exchange *(Historical)* | High-volume connected vehicle data feeds, traffic intelligence, collision data | Inactive / Defunct (Assets liquidated post-May 2023 administration) | Inactive (Historical service formerly offered limited sandbox hackathon keys) |
+These platforms collect and analyze vehicle and driver data from smartphones, OBD-II dongles, CAN-bus networks, connected cars, telematics control units (TCUs), GPS, accelerometers, and other IoT sensors to support:
+- 📊 **Usage-Based Insurance (UBI)** — Mileage-dependent Pay-As-You-Drive (PAYD) & behavior-dependent Pay-How-You-Drive (PHYD).
+- 🧠 **AI Driver Risk Scoring** — Real-time crash risk classification, harsh event detection (braking/cornering/acceleration), and distraction monitoring.
+- 💥 **Automated Crash Detection & FNOL** — Instant First Notice of Loss, impact reconstruction, and claims triage intelligence.
+- 🎯 **Actuarial Modeling & Dynamic Pricing** — Generalized Linear Models (GLMs), Hidden Markov Models (HMMs), and gradient-boosted risk pipelines.
+- 📱 **Driver Coaching & Gamification** — Safe driving scorecards, eco-driving feedback, carbon footprint tracking, and policyholder rewards.
 
-## Open-Source GitHub Projects
+Contributions welcome! Open a PR to add or update entries.
 
-### UBI / Insurance Risk Scoring
+---
 
-- **[insurance-telematics](https://github.com/burning-cost/insurance-telematics)**  
-  Open-source MIT-licensed project that converts raw GPS and accelerometer trip data into GLM-ready insurance risk features using Hidden Markov Models. It specifically targets UBI/PAYD/PHYD use cases and emphasizes explainable, auditable risk scoring.
+## 📑 Table of Contents
 
-- **[Fleet Management System — Automotive Telematics](https://github.com/sachnaror/fleet-management-system)**  
-  Open-source fleet-telematics platform built with FastAPI, SQLAlchemy, OBD-II, CAN bus, GPS, and a live dashboard. It includes driver-behavior monitoring, harsh-braking/speeding detection, trip analytics, and an explicit insurance-telematics use case.
+- [🏢 SaaS / Hosted Telematics Platforms](#-saas--hosted-telematics-platforms)
+- [⭐ Open-Source Ecosystem Leaderboard](#-open-source-ecosystem-leaderboard)
+- [💻 Open-Source GitHub Projects by Category](#-open-source-github-projects-by-category)
+  - [🤖 Driver Risk Modeling & Machine Learning](#-driver-risk-modeling--machine-learning)
+  - [🛰️ Autonomous Systems & Vehicle Simulation](#-autonomous-systems--vehicle-simulation)
+  - [⚡ Event Streaming & Telematics Data Ingestion](#-event-streaming--telematics-data-ingestion)
+  - [📡 Fleet Telematics & IoT Tracking](#-fleet-telematics--iot-tracking)
+  - [🗺️ Geospatial Analytics, Routing & Map Matching](#-geospatial-analytics-routing--map-matching)
+  - [🔌 OBD-II, CAN Bus & In-Vehicle Telemetry](#-obd-ii-can-bus--in-vehicle-telemetry)
+  - [📱 Mobile Sensing & Smartphone UBI SDKs](#-mobile-sensing--smartphone-ubi-sdks)
+  - [📋 Specialized Insurance Telematics & Fleet Portals](#-specialized-insurance-telematics--fleet-portals)
+- [🏗️ Building a Custom Open-Source Telematics Insurance Platform](#-building-a-custom-open-source-telematics-insurance-platform)
+- [⭐ Star History](#-star-history)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#-disclaimer)
 
-- **[Fleet Management System — Automotive Telematics](https://github.com/santoshiimind/fleet-management-system)**  
-  Open-source Python-based telematics system supporting GPS tracking, OBD-II diagnostics, CAN-bus data, driver behavior monitoring, alerts, and safety scoring.
+---
 
-### Mobile Telematics / Smartphone UBI
+## 🏢 SaaS / Hosted Telematics Platforms
 
-- **[Zenroad iOS Telematics App](https://github.com/Mobile-Telematics/TelematicsApp-iOS)**  
-  Open-source iOS telematics application designed for UBI, safe-driving, shared mobility, tracking, and driver-coaching applications. It includes trip tracking, driving analytics, leaderboards, rewards, and optional OBD connectivity.
+The table below catalogs enterprise commercial platforms providing connected car data, driver risk intelligence, and end-to-end UBI management. **Sorted in descending order by Company Size (Valuation / Revenue)**.
 
-- **[Zenroad Android Telematics App](https://github.com/Mobile-Telematics/TelematicsApp-Android)**  
-  Open-source Android telematics application suitable for UBI, safe-driving, fleet, tracking, and mobility applications. It provides a mobile telematics engine, trip details, driving scorecards, and optional OBD integration.
+| Platform | Company Size (Valuation / Revenue) | Category / Focus | Key Capabilities | Pricing (Starting Tier / Rates) | Free Tier & Free Trial Limits |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **[LexisNexis Risk Solutions](https://risk.lexisnexis.com/)** | **~$70B+ Mkt Cap** (RELX) / ~£2.0B ($2.6B) Rev | Telematics Risk Analytics | Telematics OnDemand, DriveMetrics scoring, OEM data exchange, claims automation | Starts from ~$0.75–$2.50 per report / policyholder verification | Carrier-assisted sandbox access & 30-day historical validation pilot study |
+| **[Verisk Telematics](https://www.verisk.com/)** | **~$24B–$35B Mkt Cap** (NASDAQ: VRSK) / ~$3.1B Rev | InsurTech Data Exchange | Telematics Data Prefill, driver risk scoring, OEM connected car data network | Starts from ~$0.50–$2.00 per inquiry / prefill transaction for licensed insurers | Carrier sandbox environment & retrospective portfolio backtesting pilot |
+| **[Samsara](https://www.samsara.com/)** | **~$22.7B Mkt Cap** (NYSE: IOT) / ~$1.73B ARR | Fleet & Video Telematics | Real-time GPS, AI dash cams, safety risk scores, fleet insurance integrations | Starts at $27/vehicle/month for core telematics ($40–$60/mo with AI dash cams; hardware $99–$548/unit; 3-yr term) | 30-day risk-free hardware trial program (hardware returnable within 30 days) |
+| **[HUK-COBURG Telematik Plus](https://www.huk.de/)** | **€8.5B+ ($9.3B) Rev** (Largest German Auto Insurer) | Consumer UBI Program | Windshield sensor + "HUK Mein Auto" app, driving score calculation, cash discounts | €0 / year extra cost (Guarantees 5% initial discount and up to 30% annual policy discount) | 100% Free permanent program for policyholders, includes complimentary physical telematics sensor |
+| **[Cambridge Mobile Telematics (CMT)](https://www.cmtelematics.com/)** | **~$6.0B Valuation** / ~$85M+ Rev | Smartphone & Tag Telematics | DriveWell platform, crash detection, driver risk scoring, claim alerting | Starts from ~$1.50–$3.00/driver/month (enterprise volume tier) | 30-day proof-of-concept (PoC) carrier pilot + interactive sandbox demo |
+| **[Geotab](https://www.geotab.com/)** | **~$5.0B+ Valuation** (Private) / ~$970M+ Rev | Enterprise Fleet Telematics | MyGeotab platform, GO9 devices, driver safety scorecards, insurance marketplace | Starts at $20–$40/vehicle/month via authorized resellers (hardware ~$80–$150/unit) | 30-day pilot trial program with evaluation demo hardware units |
+| **[Arity](https://arity.com/)** | **~$1.0B+ Valuation** (~$45B Parent Allstate) | Mobility Intelligence & Scoring | Arity IQ at-quote driver risk score, driving engine SDK, crash detection | Starts from ~$0.10–$0.25 per score lookup / API transaction (volume dependent) | 30-day sandbox API integration access for certified carrier partners |
+| **[Octo Telematics](https://www.octotelematics.com/)** | **~$800M–$1.0B Valuation** / ~$200M+ Rev | Connected Mobility & Insurance | Digital Driver platform, claims intelligence, UBI risk scoring, crash validation | Starts from ~$20–$35/vehicle/month (telematics device + cloud subscription bundle) | 30-day "Digital Driver™ Try Before You Buy" pilot for policyholder risk pre-scoring |
+| **[Nauto](https://www.nauto.com/)** | **~$400M+ Valuation** ($180M+ VC Funding) | AI Fleet Safety & Video Telematics | Real-time distracted driving alerts, AI dual-facing dash cams, collision prevention | Starts at $25/unit/month plus $375 one-time hardware fee per vehicle (1-year minimum contract) | 30-day pilot evaluation program for qualified enterprise fleets |
+| **[Otonomo (Ridecell)](https://www.ridecell.com/)** | **~$250M+ Valuation** | Connected Vehicle Data Platform | OEM vehicle data aggregation, fleet automation, driving behavior APIs | Starts from $10–$25/vehicle/month for connected data and fleet workflow automation | 30-day developer sandbox environment & enterprise PoC integration |
+| **[IMS (Intelligent Mechatronic Systems)](https://www.intellimec.com/)** | **~$150M–$200M Valuation** (Trak Global) | Connected Car & UBI Platform | DriveSync platform, OneApp mobile SDK, OBD/OEM data normalization, claims scoring | Starts from ~$15–$30/vehicle/month for data ingestion & risk scoring | Enterprise pilot package offering up to 5 self-install OBD test dongles and 30-day portal access |
+| **[Mojio](https://www.moj.io/)** | **~$150M+ Valuation** ($70M+ VC Funding) | Connected Car & Fleet Tracking | Force Fleet Tracking, OBD-II data platform, vehicle health, driver behavior | Starts at $10/vehicle/month for Force Fleet Tracking (hardware separate) | Free developer sandbox access with virtual vehicle simulator, mobile SDKs, and REST API access |
+| **[TrueMotion](https://www.truemotion.com/)** | **~$150M–$200M Acquired Value** | Mobile Telematics & UBI | Distracted driving analytics, trip scoring, crash response *(Acquired by CMT)* | Integrated into CMT DriveWell (formerly started at ~$2.00–$4.00/user/month) | 30-day enterprise evaluation pilot through CMT DriveWell platform |
+| **[Zendrive](https://www.zendrive.com/)** | **~$100M+ Valuation** (Acquired by Credit Karma) | Smartphone Telematics SDK | Mobile sensor risk scoring, collision detection, aggressive driving alerts | Starts at $4.00/driver/month for enterprise fleets / UBI programs | 30-day pilot testing program and developer sandbox access |
+| **[Vulog](https://www.vulog.com/)** | **~$50M–$80M Valuation** ($40M+ Funding) | Shared Mobility & Fleet Telematics | AiMA platform, connected fleet management, carsharing telematics, risk analytics | Starts from €15–€35/vehicle/month for connected vehicle fleet management | 30-day structured sandbox demo environment & guided solution simulation |
+| **[Greater Than](https://www.greater-than.eu/)** | **~$30M–$50M Mkt Cap** (STO: GREAT) | AI Driver Risk & Eco Scoring | Econaisance AI, crash probability modeling, climate impact analytics | Starts at €1.00–€2.50/active driver/month for AI scoring API | 30-day historical data pilot analysis & guided AI score simulator demo |
+| **[DriveQuant](https://www.drivequant.com/)** | **~$30M–$50M Valuation** (FairConnect Group) | Smartphone Telematics & White-Label Apps | DriveKit SDK, driver coaching, eco-driving, smartphone crash detection | Starts at €0.50–€1.50/active driver/month (starter tier package for pilot fleets) | 100% Free DriveKit Demo App (iOS/Android) for live testing + 30-day sandbox API trial upon request |
+| **[Wejo](https://www.wejo.com/)** | **Inactive / Liquidated** *(Hist. Peak ~$800M)* | Connected Car Data Exchange *(Historical)* | High-volume connected vehicle data feeds, traffic intelligence, collision data | Inactive / Defunct (Assets liquidated post-May 2023 administration) | Inactive (Historical service formerly offered limited sandbox hackathon keys) |
 
-- **[OwnTracks](https://github.com/owntracks/recorder)**  
-  Open-source location-tracking ecosystem useful for collecting smartphone location data that can form part of a mobile telematics pipeline.
+---
 
-- **[GPSLogger](https://github.com/mendhak/gpslogger)**  
-  Open-source Android GPS logging application useful for collecting location and trip data for custom telematics applications.
+## ⭐ Open-Source Ecosystem Leaderboard
 
-### Vehicle / OBD-II Telematics
+| Rank | Project | Primary Domain | GitHub Stars Badge | License |
+| :---: | :--- | :--- | :---: | :---: |
+| 1 | **[PyTorch](https://github.com/pytorch/pytorch)** | Deep Learning / Multi-Modal Telematics | [![GitHub stars](https://img.shields.io/github/stars/pytorch/pytorch?style=social&color=white)](https://github.com/pytorch/pytorch/stargazers) | BSD-3-Clause |
+| 2 | **[scikit-learn](https://github.com/scikit-learn/scikit-learn)** | Actuarial Risk & Feature Classification | [![GitHub stars](https://img.shields.io/github/stars/scikit-learn/scikit-learn?style=social&color=white)](https://github.com/scikit-learn/scikit-learn/stargazers) | BSD-3-Clause |
+| 3 | **[openpilot](https://github.com/commaai/openpilot)** | Autonomous Driving & CAN Telemetry | [![GitHub stars](https://img.shields.io/github/stars/commaai/openpilot?style=social&color=white)](https://github.com/commaai/openpilot/stargazers) | MIT |
+| 4 | **[Apache Spark](https://github.com/apache/spark)** | Distributed Telematics Batch Analytics | [![GitHub stars](https://img.shields.io/github/stars/apache/spark?style=social&color=white)](https://github.com/apache/spark/stargazers) | Apache-2.0 |
+| 5 | **[Apache Kafka](https://github.com/apache/kafka)** | High-Throughput Vehicle Ingestion | [![GitHub stars](https://img.shields.io/github/stars/apache/kafka?style=social&color=white)](https://github.com/apache/kafka/stargazers) | Apache-2.0 |
+| 6 | **[XGBoost](https://github.com/dmlc/xgboost)** | Gradient-Boosted Claim Severity & Frequency | [![GitHub stars](https://img.shields.io/github/stars/dmlc/xgboost?style=social&color=white)](https://github.com/dmlc/xgboost/stargazers) | Apache-2.0 |
+| 7 | **[Apache Flink](https://github.com/apache/flink)** | Real-Time Complex Event Processing (CEP) | [![GitHub stars](https://img.shields.io/github/stars/apache/flink?style=social&color=white)](https://github.com/apache/flink/stargazers) | Apache-2.0 |
+| 8 | **[Node-RED](https://github.com/node-red/node-red)** | Low-Code Telematics Workflow Ingestion | [![GitHub stars](https://img.shields.io/github/stars/node-red/node-red?style=social&color=white)](https://github.com/node-red/node-red/stargazers) | Apache-2.0 |
+| 9 | **[ThingsBoard](https://github.com/thingsboard/thingsboard)** | IoT Telemetry & Vehicle Gateway Platform | [![GitHub stars](https://img.shields.io/github/stars/thingsboard/thingsboard?style=social&color=white)](https://github.com/thingsboard/thingsboard/stargazers) | Apache-2.0 |
+| 10 | **[LightGBM](https://github.com/microsoft/LightGBM)** | Ultra-Fast Telematics Actuarial Modeling | [![GitHub stars](https://img.shields.io/github/stars/microsoft/LightGBM?style=social&color=white)](https://github.com/microsoft/LightGBM/stargazers) | MIT |
+| 11 | **[CARLA Simulator](https://github.com/carla-simulator/carla)** | Autonomous & Crash Telemetry Simulation | [![GitHub stars](https://img.shields.io/github/stars/carla-simulator/carla?style=social&color=white)](https://github.com/carla-simulator/carla/stargazers) | MIT |
+| 12 | **[Eclipse Mosquitto](https://github.com/eclipse-mosquitto/mosquitto)** | Lightweight Vehicle MQTT Broker | [![GitHub stars](https://img.shields.io/github/stars/eclipse-mosquitto/mosquitto?style=social&color=white)](https://github.com/eclipse-mosquitto/mosquitto/stargazers) | EPL-2.0 |
+| 13 | **[Traccar](https://github.com/traccar/traccar)** | Multi-Protocol GPS & Fleet Telematics | [![GitHub stars](https://img.shields.io/github/stars/traccar/traccar?style=social&color=white)](https://github.com/traccar/traccar/stargazers) | Apache-2.0 |
+| 14 | **[OSRM Backend](https://github.com/Project-OSRM/osrm-backend)** | High-Speed Map Matching & Routing | [![GitHub stars](https://img.shields.io/github/stars/Project-OSRM/osrm-backend?style=social&color=white)](https://github.com/Project-OSRM/osrm-backend/stargazers) | BSD-2-Clause |
+| 15 | **[GraphHopper](https://github.com/graphhopper/graphhopper)** | Fast Route Profiling & Matrix Calculations | [![GitHub stars](https://img.shields.io/github/stars/graphhopper/graphhopper?style=social&color=white)](https://github.com/graphhopper/graphhopper/stargazers) | Apache-2.0 |
+| 16 | **[H3 Geospatial Index](https://github.com/uber/h3)** | Hexagonal Spatial Telematics Indexing | [![GitHub stars](https://img.shields.io/github/stars/uber/h3?style=social&color=white)](https://github.com/uber/h3/stargazers) | Apache-2.0 |
+| 17 | **[Valhalla](https://github.com/valhalla/valhalla)** | Multi-Modal Route & Elevation Matching | [![GitHub stars](https://img.shields.io/github/stars/valhalla/valhalla?style=social&color=white)](https://github.com/valhalla/valhalla/stargazers) | MIT |
+| 18 | **[OpenStreetMap Website](https://github.com/openstreetmap/openstreetmap-website)** | Global Geospatial Infrastructure | [![GitHub stars](https://img.shields.io/github/stars/openstreetmap/openstreetmap-website?style=social&color=white)](https://github.com/openstreetmap/openstreetmap-website/stargazers) | GPL-2.0 |
+| 19 | **[PostGIS](https://github.com/postgis/postgis)** | Spatial Database for Trajectories & Geofences | [![GitHub stars](https://img.shields.io/github/stars/postgis/postgis?style=social&color=white)](https://github.com/postgis/postgis/stargazers) | GPL-2.0 |
+| 20 | **[GPSLogger](https://github.com/mendhak/gpslogger)** | Open-Source Android GPS / IMU Logger | [![GitHub stars](https://img.shields.io/github/stars/mendhak/gpslogger?style=social&color=white)](https://github.com/mendhak/gpslogger/stargazers) | GPL-2.0 |
+| 21 | **[python-can](https://github.com/hardbyte/python-can)** | Vehicle Controller Area Network SDK | [![GitHub stars](https://img.shields.io/github/stars/hardbyte/python-can?style=social&color=white)](https://github.com/hardbyte/python-can/stargazers) | LGPL-3.0 |
+| 22 | **[Cabana](https://github.com/commaai/cabana)** | CAN Bus Visualizer & Reverse Engineering | [![GitHub stars](https://img.shields.io/github/stars/commaai/cabana?style=social&color=white)](https://github.com/commaai/cabana/stargazers) | MIT |
+| 23 | **[python-OBD](https://github.com/brendan-w/python-OBD)** | OBD-II Diagnostics & Telemetry Library | [![GitHub stars](https://img.shields.io/github/stars/brendan-w/python-OBD?style=social&color=white)](https://github.com/brendan-w/python-OBD/stargazers) | GPL-2.0 |
+| 24 | **[SavvyCAN](https://github.com/collin80/SavvyCAN)** | CAN Bus Reverse Engineering & Sniffing | [![GitHub stars](https://img.shields.io/github/stars/collin80/SavvyCAN?style=social&color=white)](https://github.com/collin80/SavvyCAN/stargazers) | MIT |
+| 25 | **[OwnTracks Recorder](https://github.com/owntracks/recorder)** | Private Location Ingestion & Storage | [![GitHub stars](https://img.shields.io/github/stars/owntracks/recorder?style=social&color=white)](https://github.com/owntracks/recorder/stargazers) | GPL-2.0 |
+| 26 | **[Panda](https://github.com/commaai/panda)** | Universal OBD-II & CAN Vehicle Hardware Interface | [![GitHub stars](https://img.shields.io/github/stars/commaai/panda?style=social&color=white)](https://github.com/commaai/panda/stargazers) | MIT |
+| 27 | **[MDS Specification](https://github.com/openmobilityfoundation/mobility-data-specification)** | Shared Mobility & Telematics Data Standard | [![GitHub stars](https://img.shields.io/github/stars/openmobilityfoundation/mobility-data-specification?style=social&color=white)](https://github.com/openmobilityfoundation/mobility-data-specification/stargazers) | Apache-2.0 |
+| 28 | **[Eclipse Ditto](https://github.com/eclipse-ditto/ditto)** | Connected Vehicle Digital Twin Framework | [![GitHub stars](https://img.shields.io/github/stars/eclipse-ditto/ditto?style=social&color=white)](https://github.com/eclipse-ditto/ditto/stargazers) | EPL-2.0 |
+| 29 | **[BUSMASTER](https://github.com/rbei-etas/busmaster)** | Automotive Bus Analysis & Simulation Tool | [![GitHub stars](https://img.shields.io/github/stars/rbei-etas/busmaster?style=social&color=white)](https://github.com/rbei-etas/busmaster/stargazers) | LGPL-2.1 |
+| 30 | **[Eclipse Hono](https://github.com/eclipse-hono/hono)** | Large-Scale IoT Device Connectivity Layer | [![GitHub stars](https://img.shields.io/github/stars/eclipse-hono/hono?style=social&color=white)](https://github.com/eclipse-hono/hono/stargazers) | EPL-2.0 |
+| 31 | **[OpenXC](https://github.com/openxc/openxc)** | Ford Open-Source Vehicle Data Standard | [![GitHub stars](https://img.shields.io/github/stars/openxc/openxc?style=social&color=white)](https://github.com/openxc/openxc/stargazers) | BSD-2-Clause |
+| 32 | **[CANtact](https://github.com/linklayer/cantact)** | Open Hardware CAN Bus Toolchain | [![GitHub stars](https://img.shields.io/github/stars/linklayer/cantact?style=social&color=white)](https://github.com/linklayer/cantact/stargazers) | MIT |
+| 33 | **[Open mHealth Schemas](https://github.com/openmhealth/web-schemas)** | Mobile Sensor Schemas & Normalization | [![GitHub stars](https://img.shields.io/github/stars/openmhealth/web-schemas?style=social&color=white)](https://github.com/openmhealth/web-schemas/stargazers) | BSD-2-Clause |
+| 34 | **[Zenroad Android App](https://github.com/Mobile-Telematics/TelematicsApp-Android)** | Open-Source Android UBI & Driving App | [![GitHub stars](https://img.shields.io/github/stars/Mobile-Telematics/TelematicsApp-Android?style=social&color=white)](https://github.com/Mobile-Telematics/TelematicsApp-Android/stargazers) | Apache-2.0 |
+| 35 | **[Zenroad iOS App](https://github.com/Mobile-Telematics/TelematicsApp-iOS)** | Open-Source iOS UBI & Driving App | [![GitHub stars](https://img.shields.io/github/stars/Mobile-Telematics/TelematicsApp-iOS?style=social&color=white)](https://github.com/Mobile-Telematics/TelematicsApp-iOS/stargazers) | Apache-2.0 |
+| 36 | **[SensorLogger](https://github.com/tszheichoi/awesome-sensor-logger)** | Smartphone Accelerometer & GPS Logger | [![GitHub stars](https://img.shields.io/github/stars/tszheichoi/awesome-sensor-logger?style=social&color=white)](https://github.com/tszheichoi/awesome-sensor-logger/stargazers) | MIT |
+| 37 | **[insurance-telematics](https://github.com/burning-cost/insurance-telematics)** | HMM-Based GLM Insurance Risk Features | [![GitHub stars](https://img.shields.io/github/stars/burning-cost/insurance-telematics?style=social&color=white)](https://github.com/burning-cost/insurance-telematics/stargazers) | MIT |
+| 38 | **[Fleet Management System (sachnaror)](https://github.com/sachnaror/fleet-management-system)** | FastAPI Telematics Dashboard & Harsh Braking | [![GitHub stars](https://img.shields.io/github/stars/sachnaror/fleet-management-system?style=social&color=white)](https://github.com/sachnaror/fleet-management-system/stargazers) | MIT |
+| 39 | **[Fleet Management System (santoshiimind)](https://github.com/santoshiimind/fleet-management-system)** | Python CAN & OBD-II Driver Safety System | [![GitHub stars](https://img.shields.io/github/stars/santoshiimind/fleet-management-system?style=social&color=white)](https://github.com/santoshiimind/fleet-management-system/stargazers) | MIT |
 
-- **[python-OBD](https://github.com/brendan-w/python-OBD)**  
-  Python library for communicating with OBD-II vehicle interfaces and retrieving vehicle telemetry and diagnostic information.
+---
 
-- **[OpenXC](https://github.com/openxc/openxc)**  
-  Open-source vehicle-data platform designed to make automotive CAN-bus information accessible to software applications.
+## 💻 Open-Source GitHub Projects by Category
 
-- **[CANtact](https://github.com/linklayer/cantact)**  
-  Open-source CAN-bus hardware/software ecosystem useful for collecting and analyzing vehicle network data.
+### 🤖 Driver Risk Modeling & Machine Learning
 
-- **[python-can](https://github.com/hardbyte/python-can)**  
-  Open-source Python library for Controller Area Network communication, useful for vehicle telemetry and CAN-bus data ingestion.
+Tools for driver risk scoring, actuarial claims prediction, harsh event detection, and multi-modal trajectory learning. **Sorted by stars (descending)**.
 
-- **[SavvyCAN](https://github.com/collin80/SavvyCAN)**  
-  Open-source CAN-bus reverse-engineering and vehicle-network analysis tool useful for connected-car data experimentation.
+- **[PyTorch](https://github.com/pytorch/pytorch)** [![GitHub stars](https://img.shields.io/github/stars/pytorch/pytorch?style=social&color=white)](https://github.com/pytorch/pytorch/stargazers)  
+  Leading deep learning framework used for recurrent and transformer neural networks on continuous GPS trajectories, multi-axis IMU accelerometer signals, in-cabin camera streams, and sensor-fusion crash prediction.
+- **[scikit-learn](https://github.com/scikit-learn/scikit-learn)** [![GitHub stars](https://img.shields.io/github/stars/scikit-learn/scikit-learn?style=social&color=white)](https://github.com/scikit-learn/scikit-learn/stargazers)  
+  Essential machine-learning library for driver risk clustering, behavioral segmentation, anomaly detection, Poisson regression for claim frequency, and feature importance analysis.
+- **[XGBoost](https://github.com/dmlc/xgboost)** [![GitHub stars](https://img.shields.io/github/stars/dmlc/xgboost?style=social&color=white)](https://github.com/dmlc/xgboost/stargazers)  
+  Industrial gradient-boosting framework widely utilized by actuarial data teams for PHYD risk scorecard construction, claim frequency/severity prediction, and telematics feature evaluation.
+- **[LightGBM](https://github.com/microsoft/LightGBM)** [![GitHub stars](https://img.shields.io/github/stars/microsoft/LightGBM?style=social&color=white)](https://github.com/microsoft/LightGBM/stargazers)  
+  High-performance gradient boosting framework optimized for large-scale, high-cardinality telematics feature sets and real-time inference pricing engines.
+- **[insurance-telematics](https://github.com/burning-cost/insurance-telematics)** [![GitHub stars](https://img.shields.io/github/stars/burning-cost/insurance-telematics?style=social&color=white)](https://github.com/burning-cost/insurance-telematics/stargazers)  
+  Specialized open-source Python library converting raw GPS and accelerometer trip data into GLM-ready insurance risk features using Hidden Markov Models (HMMs). Designed specifically for UBI/PAYD/PHYD actuarial explainability.
 
-- **[BUSMASTER](https://github.com/rbei-etas/busmaster)**  
-  Open-source Windows-based CAN-bus development and analysis software useful for vehicle-network data acquisition and testing.
+---
 
-### Fleet Telematics & GPS Tracking
+### 🛰️ Autonomous Systems & Vehicle Simulation
 
-- **[Traccar](https://github.com/traccar/traccar)**  
-  Open-source GPS tracking platform supporting real-time vehicle tracking, geofencing, alerts, reports, and a wide variety of telematics devices.
+Open platforms for autonomous vehicle telemetry, hardware-in-the-loop (HIL) testing, and simulated sensor stream generation. **Sorted by stars (descending)**.
 
-- **[OpenGTS](https://sourceforge.net/projects/opengts/)**  
-  Open-source GPS tracking system for vehicle and fleet tracking applications.
+- **[openpilot](https://github.com/commaai/openpilot)** [![GitHub stars](https://img.shields.io/github/stars/commaai/openpilot?style=social&color=white)](https://github.com/commaai/openpilot/stargazers)  
+  Open-source advanced driver assistance system (ADAS) that logs and processes petabytes of real-world vehicle CAN bus, video, and IMU sensor data.
+- **[CARLA Simulator](https://github.com/carla-simulator/carla)** [![GitHub stars](https://img.shields.io/github/stars/carla-simulator/carla?style=social&color=white)](https://github.com/carla-simulator/carla/stargazers)  
+  Open-source autonomous driving simulator for synthetic telematics data generation, crash simulation physics, and extreme event scenario generation for insurance algorithms.
 
-- **[OwnTracks Recorder](https://github.com/owntracks/recorder)**  
-  Open-source backend for receiving and storing location data from mobile devices.
+---
 
-- **[ThingsBoard](https://github.com/thingsboard/thingsboard)**  
-  Open-source IoT platform providing device management, telemetry ingestion, rule processing, dashboards, and real-time monitoring.
+### ⚡ Event Streaming & Telematics Data Ingestion
 
-- **[Eclipse Hono](https://github.com/eclipse-hono/hono)**  
-  Open-source IoT connectivity platform suitable for connecting telematics devices and vehicles to cloud infrastructure.
+High-throughput, low-latency streaming infrastructure for real-time connected vehicle telemetry. **Sorted by stars (descending)**.
 
-- **[Eclipse Ditto](https://github.com/eclipse-ditto/ditto)**  
-  Open-source digital-twin framework useful for representing connected vehicles and maintaining real-time vehicle state.
+- **[Apache Spark](https://github.com/apache/spark)** [![GitHub stars](https://img.shields.io/github/stars/apache/spark?style=social&color=white)](https://github.com/apache/spark/stargazers)  
+  Unified engine for large-scale distributed batch processing, feature store computations, and historical trajectory analytics across millions of vehicles.
+- **[Apache Kafka](https://github.com/apache/kafka)** [![GitHub stars](https://img.shields.io/github/stars/apache/kafka?style=social&color=white)](https://github.com/apache/kafka/stargazers)  
+  High-throughput distributed event streaming platform serving as the backbone for high-frequency GPS, accelerometer, and CAN telematics message ingestion.
+- **[Apache Flink](https://github.com/apache/flink)** [![GitHub stars](https://img.shields.io/github/stars/apache/flink?style=social&color=white)](https://github.com/apache/flink/stargazers)  
+  Stateful stream processing engine designed for sub-second trip detection, real-time harsh braking identification, and streaming driving score updates.
+- **[Node-RED](https://github.com/node-red/node-red)** [![GitHub stars](https://img.shields.io/github/stars/node-red/node-red?style=social&color=white)](https://github.com/node-red/node-red/stargazers)  
+  Low-code event-driven integration platform for connecting telematics devices, MQTT brokers, databases, and policy administration webhooks.
+- **[Eclipse Mosquitto](https://github.com/eclipse-mosquitto/mosquitto)** [![GitHub stars](https://img.shields.io/github/stars/eclipse-mosquitto/mosquitto?style=social&color=white)](https://github.com/eclipse-mosquitto/mosquitto/stargazers)  
+  Lightweight open-source MQTT message broker ideal for resource-constrained OBD-II dongles, embedded telematics control units (TCUs), and mobile clients.
+- **[Eclipse Ditto](https://github.com/eclipse-ditto/ditto)** [![GitHub stars](https://img.shields.io/github/stars/eclipse-ditto/ditto?style=social&color=white)](https://github.com/eclipse-ditto/ditto/stargazers)  
+  Digital twin framework providing structured virtual representations of connected vehicles, vehicle health state, and live telemetry mirrors.
+- **[Eclipse Hono](https://github.com/eclipse-hono/hono)** [![GitHub stars](https://img.shields.io/github/stars/eclipse-hono/hono?style=social&color=white)](https://github.com/eclipse-hono/hono/stargazers)  
+  IoT connectivity platform designed to connect millions of telematics units uniformly over MQTT, HTTP, and AMQP protocols.
 
-### Driving Behavior & Sensor Processing
+---
 
-- **[Open mHealth](https://github.com/openmhealth)**  
-  Open-source ecosystem for standardized health and sensor data representations that can provide useful patterns for mobile-sensor processing and interoperability.
+### 📡 Fleet Telematics & IoT Tracking
 
-- **[SensorLogger](https://github.com/tszheichoi/awesome-sensor-logger)**  
-  Mobile sensor-data collection tooling useful for experimentation with accelerometer, gyroscope, GPS, and other smartphone signals.
+Fleet management, asset tracking, and device management servers. **Sorted by stars (descending)**.
 
-- **[ActivityRecognitionClient](https://developers.google.com/location-context/activity-recognition)**  
-  Mobile activity-recognition infrastructure that can be incorporated into driving-state and trip-detection systems.
+- **[ThingsBoard](https://github.com/thingsboard/thingsboard)** [![GitHub stars](https://img.shields.io/github/stars/thingsboard/thingsboard?style=social&color=white)](https://github.com/thingsboard/thingsboard/stargazers)  
+  Open-source IoT platform for device connectivity, telemetry visualization, rule engine alert dispatching, and multi-tenant fleet telematics dashboards.
+- **[Traccar](https://github.com/traccar/traccar)** [![GitHub stars](https://img.shields.io/github/stars/traccar/traccar?style=social&color=white)](https://github.com/traccar/traccar/stargazers)  
+  Enterprise-grade open-source GPS tracking system supporting over 1,500 telematics device protocols, real-time geofencing, speeding alerts, and trip history.
+- **[OwnTracks Recorder](https://github.com/owntracks/recorder)** [![GitHub stars](https://img.shields.io/github/stars/owntracks/recorder?style=social&color=white)](https://github.com/owntracks/recorder/stargazers)  
+  Lightweight self-hosted backend service for receiving and storing private mobile geolocation streams via HTTP and MQTT.
+- **[MDS (Mobility Data Specification)](https://github.com/openmobilityfoundation/mobility-data-specification)** [![GitHub stars](https://img.shields.io/github/stars/openmobilityfoundation/mobility-data-specification?style=social&color=white)](https://github.com/openmobilityfoundation/mobility-data-specification/stargazers)  
+  Standardized open data specification managed by the Open Mobility Foundation for managing shared connected vehicle fleets and telematics feeds.
 
-- **[scikit-learn](https://github.com/scikit-learn/scikit-learn)**  
-  Open-source machine-learning toolkit useful for driver-risk classification, segmentation, anomaly detection, and telematics modeling.
+---
 
-- **[XGBoost](https://github.com/dmlc/xgboost)**  
-  Open-source gradient-boosting framework useful for insurance risk modeling, claim-frequency prediction, and driving-risk classification.
+### 🗺️ Geospatial Analytics, Routing & Map Matching
 
-- **[LightGBM](https://github.com/microsoft/LightGBM)**  
-  Open-source gradient-boosting framework suitable for large-scale telematics feature sets and insurance risk models.
+Geographic information systems, road network analysis, map matching, and spatial risk indexing. **Sorted by stars (descending)**.
 
-- **[PyTorch](https://github.com/pytorch/pytorch)**  
-  Open-source machine-learning framework useful for deep-learning models over GPS trajectories, accelerometer signals, video, and multimodal telematics data.
+- **[OSRM Backend](https://github.com/Project-OSRM/osrm-backend)** [![GitHub stars](https://img.shields.io/github/stars/Project-OSRM/osrm-backend?style=social&color=white)](https://github.com/Project-OSRM/osrm-backend/stargazers)  
+  High-performance C++ routing engine based on OpenStreetMap data, providing fast Hidden Markov Model map-matching for noisy GPS vehicle traces.
+- **[GraphHopper](https://github.com/graphhopper/graphhopper)** [![GitHub stars](https://img.shields.io/github/stars/graphhopper/graphhopper?style=social&color=white)](https://github.com/graphhopper/graphhopper/stargazers)  
+  Fast Java routing engine supporting map matching, custom road classification weighting, distance matrices, and elevation analysis.
+- **[H3 Geospatial Index](https://github.com/uber/h3)** [![GitHub stars](https://img.shields.io/github/stars/uber/h3?style=social&color=white)](https://github.com/uber/h3/stargazers)  
+  Hexagonal hierarchical spatial index developed by Uber, ideal for territory risk scoring, telematics heatmaps, and spatial driving exposure aggregation.
+- **[Valhalla](https://github.com/valhalla/valhalla)** [![GitHub stars](https://img.shields.io/github/stars/valhalla/valhalla?style=social&color=white)](https://github.com/valhalla/valhalla/stargazers)  
+  Modular open-source routing engine with dynamic costing, time-distance calculations, and map-matching tailored for connected vehicle analytics.
+- **[OpenStreetMap Website](https://github.com/openstreetmap/openstreetmap-website)** [![GitHub stars](https://img.shields.io/github/stars/openstreetmap/openstreetmap-website?style=social&color=white)](https://github.com/openstreetmap/openstreetmap-website/stargazers)  
+  The collaborative global mapping project providing free geographic data, speed limits, and road attributes for context-aware driving risk models.
+- **[PostGIS](https://github.com/postgis/postgis)** [![GitHub stars](https://img.shields.io/github/stars/postgis/postgis?style=social&color=white)](https://github.com/postgis/postgis/stargazers)  
+  Spatial database extension for PostgreSQL, providing spatial indexing, trajectory partitioning, geofence polygons, and distance calculations.
 
-### Mapping & Route Processing
+---
 
-- **[OpenStreetMap](https://github.com/openstreetmap/openstreetmap-website)**  
-  Open geographic-data ecosystem providing road-network data for trip analysis, routing, geofencing, and map-based telematics applications.
+### 🔌 OBD-II, CAN Bus & In-Vehicle Telemetry
 
-- **[OSRM](https://github.com/Project-OSRM/osrm-backend)**  
-  Open-source high-performance routing engine based on OpenStreetMap data, useful for map matching and route analysis.
+Hardware interfaces, diagnostic protocol decoders, and vehicle bus analysis libraries. **Sorted by stars (descending)**.
 
-- **[GraphHopper](https://github.com/graphhopper/graphhopper)**  
-  Open-source routing engine useful for route calculation, map matching, distance matrices, and geospatial telematics applications.
+- **[python-can](https://github.com/hardbyte/python-can)** [![GitHub stars](https://img.shields.io/github/stars/hardbyte/python-can?style=social&color=white)](https://github.com/hardbyte/python-can/stargazers)  
+  Comprehensive Python library providing Controller Area Network support for interacting with CAN interfaces, bus logging, and message decoding.
+- **[Cabana](https://github.com/commaai/cabana)** [![GitHub stars](https://img.shields.io/github/stars/commaai/cabana?style=social&color=white)](https://github.com/commaai/cabana/stargazers)  
+  Open-source web tool for viewing and reverse engineering CAN bus signals, DBC editing, and live automotive stream graphing.
+- **[python-OBD](https://github.com/brendan-w/python-OBD)** [![GitHub stars](https://img.shields.io/github/stars/brendan-w/python-OBD?style=social&color=white)](https://github.com/brendan-w/python-OBD/stargazers)  
+  Python library for communicating with OBD-II ELM327 adapters, fetching speed, RPM, throttle position, diagnostic trouble codes (DTCs), and mileage.
+- **[SavvyCAN](https://github.com/collin80/SavvyCAN)** [![GitHub stars](https://img.shields.io/github/stars/collin80/SavvyCAN?style=social&color=white)](https://github.com/collin80/SavvyCAN/stargazers)  
+  Cross-platform C++/Qt application for capturing, filtering, reverse engineering, and fuzzing vehicle CAN networks.
+- **[Panda](https://github.com/commaai/panda)** [![GitHub stars](https://img.shields.io/github/stars/commaai/panda?style=social&color=white)](https://github.com/commaai/panda/stargazers)  
+  Universal car interface hardware and firmware supporting 3x CAN, LIN, and Kline with high-precision timestamping.
+- **[BUSMASTER](https://github.com/rbei-etas/busmaster)** [![GitHub stars](https://img.shields.io/github/stars/rbei-etas/busmaster?style=social&color=white)](https://github.com/rbei-etas/busmaster/stargazers)  
+  Open-source PC software for simulating, analyzing, and testing automotive bus systems (CAN, LIN, FlexRay).
+- **[OpenXC](https://github.com/openxc/openxc)** [![GitHub stars](https://img.shields.io/github/stars/openxc/openxc?style=social&color=white)](https://github.com/openxc/openxc/stargazers)  
+  Open-source vehicle data platform providing a standardized API for accessing CAN bus parameters without proprietary diagnostic reverse engineering.
+- **[CANtact](https://github.com/linklayer/cantact)** [![GitHub stars](https://img.shields.io/github/stars/linklayer/cantact?style=social&color=white)](https://github.com/linklayer/cantact/stargazers)  
+  Open-source hardware and software tool for working with CAN networks via USB.
 
-- **[Valhalla](https://github.com/valhalla/valhalla)**  
-  Open-source routing engine designed for scalable multimodal routing and location-based services.
+---
 
-- **[PostGIS](https://github.com/postgis/postgis)**  
-  Open-source PostgreSQL extension for storing, indexing, and analyzing GPS trajectories, geofences, routes, and other spatial insurance data.
+### 📱 Mobile Sensing & Smartphone UBI SDKs
 
-### Data Streaming & Telematics Infrastructure
+Mobile applications and sensor pipelines for smartphone-based driving behavior capture. **Sorted by stars (descending)**.
 
-- **[Apache Kafka](https://github.com/apache/kafka)**  
-  Open-source event-streaming platform suitable for ingesting high-volume vehicle telemetry and trip events.
+- **[GPSLogger for Android](https://github.com/mendhak/gpslogger)** [![GitHub stars](https://img.shields.io/github/stars/mendhak/gpslogger?style=social&color=white)](https://github.com/mendhak/gpslogger/stargazers)  
+  Battery-efficient Android GPS and sensor logging app supporting automatic upload to custom servers, OpenStreetMap, and cloud storage.
+- **[Open mHealth Schemas](https://github.com/openmhealth/web-schemas)** [![GitHub stars](https://img.shields.io/github/stars/openmhealth/web-schemas?style=social&color=white)](https://github.com/openmhealth/web-schemas/stargazers)  
+  Standardized mobile sensor data schemas providing architectural patterns for high-frequency accelerometer and gyroscope data representations.
+- **[Zenroad Android App](https://github.com/Mobile-Telematics/TelematicsApp-Android)** [![GitHub stars](https://img.shields.io/github/stars/Mobile-Telematics/TelematicsApp-Android?style=social&color=white)](https://github.com/Mobile-Telematics/TelematicsApp-Android/stargazers)  
+  Open-source native Android telematics application offering auto-trip detection, driving behavior scoring, scorecards, and optional OBD connectivity.
+- **[Zenroad iOS App](https://github.com/Mobile-Telematics/TelematicsApp-iOS)** [![GitHub stars](https://img.shields.io/github/stars/Mobile-Telematics/TelematicsApp-iOS?style=social&color=white)](https://github.com/Mobile-Telematics/TelematicsApp-iOS/stargazers)  
+  Open-source native iOS telematics application for UBI tracking, background motion activity detection, trip playback, and driver leaderboards.
+- **[SensorLogger](https://github.com/tszheichoi/awesome-sensor-logger)** [![GitHub stars](https://img.shields.io/github/stars/tszheichoi/awesome-sensor-logger?style=social&color=white)](https://github.com/tszheichoi/awesome-sensor-logger/stargazers)  
+  Curated mobile sensor-data logging tooling for collecting smartphone IMU, barometer, gyroscope, and GNSS raw streams.
 
-- **[MQTT Eclipse Mosquitto](https://github.com/eclipse-mosquitto/mosquitto)**  
-  Open-source MQTT broker suitable for lightweight vehicle and IoT telemetry ingestion.
+---
 
-- **[Eclipse Hono](https://github.com/eclipse-hono/hono)**  
-  Open-source IoT connectivity layer for securely connecting large numbers of telematics devices.
+### 📋 Specialized Insurance Telematics & Fleet Portals
 
-- **[Node-RED](https://github.com/node-red/node-red)**  
-  Open-source flow-based integration tool useful for connecting telematics devices, APIs, databases, alerts, and insurance workflows.
+Full-stack open-source projects designed specifically for telematics insurance and driver behavior analytics. **Sorted by stars (descending)**.
 
-- **[Apache Flink](https://github.com/apache/flink)**  
-  Open-source stream-processing engine suitable for real-time processing of high-volume vehicle and trip telemetry.
+- **[insurance-telematics](https://github.com/burning-cost/insurance-telematics)** [![GitHub stars](https://img.shields.io/github/stars/burning-cost/insurance-telematics?style=social&color=white)](https://github.com/burning-cost/insurance-telematics/stargazers)  
+  Converts raw GPS/accelerometer streams into actuarial risk metrics using Hidden Markov Models (HMMs) and generalized linear modeling.
+- **[Fleet Management System — sachnaror](https://github.com/sachnaror/fleet-management-system)** [![GitHub stars](https://img.shields.io/github/stars/sachnaror/fleet-management-system?style=social&color=white)](https://github.com/sachnaror/fleet-management-system/stargazers)  
+  Full-stack telematics platform built with FastAPI, SQLAlchemy, OBD-II/CAN bus ingestion, GPS tracking, and an insurance risk dashboard.
+- **[Fleet Management System — santoshiimind](https://github.com/santoshiimind/fleet-management-system)** [![GitHub stars](https://img.shields.io/github/stars/santoshiimind/fleet-management-system?style=social&color=white)](https://github.com/santoshiimind/fleet-management-system/stargazers)  
+  Python-based automotive telematics system providing GPS tracking, OBD-II diagnostics, harsh acceleration/braking monitoring, and safety scorecards.
 
-- **[Apache Spark](https://github.com/apache/spark)**  
-  Open-source distributed analytics platform useful for large-scale historical telematics processing and feature engineering.
+---
 
-### Additional Strong Open-Source Options
+## 🏗️ Building a Custom Open-Source Telematics Insurance Platform
 
-- **Mobile UBI** — Zenroad iOS, Zenroad Android, OwnTracks, and GPSLogger.
-- **Vehicle telemetry** — python-OBD, OpenXC, python-can, CANtact, SavvyCAN, and BUSMASTER.
-- **Fleet tracking** — Traccar, OpenGTS, OwnTracks, ThingsBoard, and Eclipse Hono.
-- **Driving-risk modeling** — insurance-telematics, scikit-learn, XGBoost, LightGBM, and PyTorch.
-- **GPS processing** — OpenStreetMap, OSRM, GraphHopper, Valhalla, and PostGIS.
-- **IoT ingestion** — MQTT Mosquitto, Eclipse Hono, Eclipse Ditto, ThingsBoard, and Node-RED.
-- **Streaming analytics** — Apache Kafka, Apache Flink, and Apache Spark.
-- **Vehicle-network analysis** — OpenXC, python-can, CANtact, SavvyCAN, and BUSMASTER.
-- **Insurance feature engineering** — HMMs, GLMs, gradient boosting, trajectory features, harsh-braking detection, speeding detection, acceleration/deceleration profiles, mileage, time-of-day, and road-context features.
-
-**Frameworks for building custom systems**: Combine **Zenroad + Traccar + python-OBD/python-can + MQTT + Kafka + PostGIS + OSRM/GraphHopper + insurance-telematics + XGBoost/LightGBM + Grafana** to create a self-hosted telematics-insurance platform covering mobile data collection, vehicle telemetry, trip processing, risk scoring, geospatial analytics, and insurer dashboards.
-
-## Building a Custom Open-Source Telematics Insurance Platform
-
-A practical open-source telematics-insurance architecture can be assembled from several layers:
-
-1. **Data collection** — smartphone sensors, Zenroad, OBD-II dongles, CAN bus, OEM APIs, and telematics devices.
-2. **Device connectivity** — MQTT, Eclipse Hono, Traccar, or custom APIs.
-3. **Vehicle telemetry** — python-OBD, python-can, OpenXC, and CAN tooling.
-4. **GPS processing** — GPS coordinates, speed, heading, map matching, and route reconstruction.
-5. **Trip detection** — Identify trip start/end, parked periods, mileage, and driving sessions.
-6. **Driving behavior extraction** — Speeding, harsh braking, acceleration, cornering, phone distraction, night driving, and trip context.
-7. **Geospatial enrichment** — OpenStreetMap, OSRM, GraphHopper, Valhalla, and PostGIS.
-8. **Feature engineering** — Aggregate raw sensor streams into driver- and trip-level risk features.
-9. **Risk scoring** — HMMs, GLMs, gradient boosting, neural networks, or actuarial models.
-10. **UBI pricing** — Map telematics-derived risk indicators to pricing or discount models.
-11. **Crash detection** — Accelerometer, gyroscope, GPS, OBD/CAN, and mobile-sensor fusion.
-12. **Claims intelligence** — Connect crash events and trip history to claims systems.
-13. **Driver engagement** — Scorecards, coaching, gamification, alerts, and feedback.
-14. **Analytics** — Grafana, Superset, Metabase, or custom insurer dashboards.
-15. **Data governance** — Encryption, consent management, retention controls, audit trails, and privacy-preserving analytics.
-
-### Example Open-Source Telematics Insurance Architecture
+A complete production-ready open-source telematics-insurance stack can be synthesized by integrating modular specialized layers:
 
 ```text
-                       ┌─────────────────────────┐
-                       │       Policyholders      │
-                       │  Smartphone / Connected  │
-                       │       Vehicles / OBD     │
-                       └────────────┬────────────┘
-                                    │
-             ┌──────────────────────┼──────────────────────┐
-             │                      │                      │
-      ┌──────▼──────┐       ┌──────▼──────┐       ┌──────▼──────┐
-      │  Smartphone │       │   OBD / CAN  │       │ OEM / Fleet │
-      │  Zenroad    │       │ python-OBD   │       │  Telematics │
-      │  GPS/IMU    │       │ python-can   │       │    APIs     │
-      └──────┬──────┘       └──────┬──────┘       └──────┬──────┘
-             │                     │                     │
-             └─────────────────────┼─────────────────────┘
-                                   │
-                       ┌───────────▼───────────┐
-                       │   Telematics Gateway  │
-                       │ MQTT / Hono / Traccar │
-                       └───────────┬───────────┘
-                                   │
-                       ┌───────────▼───────────┐
-                       │    Event Streaming    │
-                       │ Kafka / Flink / MQTT  │
-                       └───────────┬───────────┘
-                                   │
-              ┌────────────────────┼────────────────────┐
-              │                    │                    │
-       ┌──────▼──────┐     ┌──────▼──────┐     ┌──────▼──────┐
-       │ Trip Engine │     │ GPS / Map   │     │ Sensor /    │
-       │ Trip Detect │     │ Matching    │     │ Behavior    │
-       │ Mileage     │     │ OSM/OSRM    │     │ Features    │
-       └──────┬──────┘     └──────┬──────┘     └──────┬──────┘
-              │                    │                    │
-              └────────────────────┼────────────────────┘
-                                   │
-                       ┌───────────▼───────────┐
-                       │ Feature Store / DB    │
-                       │ PostgreSQL + PostGIS  │
-                       └───────────┬───────────┘
-                                   │
-                       ┌───────────▼───────────┐
-                       │   Risk Scoring Layer  │
-                       │ HMM / GLM / XGBoost   │
-                       │ LightGBM / PyTorch    │
-                       └───────────┬───────────┘
-                                   │
-                    ┌──────────────┼──────────────┐
-                    │              │              │
-             ┌──────▼─────┐ ┌──────▼─────┐ ┌─────▼──────┐
-             │ UBI Pricing│ │ Crash /    │ │ Driver     │
-             │ / Discount │ │ Claims     │ │ Coaching   │
-             │ Models     │ │ Analytics  │ │ / Rewards  │
-             └──────┬─────┘ └──────┬─────┘ └─────┬──────┘
-                    │              │              │
-                    └──────────────┼──────────────┘
-                                   │
-                       ┌───────────▼───────────┐
-                       │   Insurer Analytics   │
-                       │ Grafana / Superset    │
-                       │ Pricing / Claims / BI │
-                       └───────────────────────┘
+                       ┌──────────────────────────────────────────┐
+                       │        🚗 Insured Policyholders          │
+                       │   Smartphones / Connected Cars / OBD     │
+                       └────────────────────┬─────────────────────┘
+                                            │
+               ┌────────────────────────────┼────────────────────────────┐
+               │                            │                            │
+        ┌──────▼──────┐              ┌──────▼──────┐              ┌──────▼──────┐
+        │  📱 Mobile  │              │  🔌 OBD/CAN │              │  🌐 OEM/API │
+        │ Zenroad /   │              │ python-can  │              │ Connected   │
+        │ SensorLogger│              │ python-OBD  │              │ Car Gateway │
+        └──────┬──────┘              └──────┬──────┘              └──────┬──────┘
+               │                            │                            │
+               └────────────────────────────┼────────────────────────────┘
+                                            │
+                               ┌────────────▼────────────┐
+                               │ 📡 Telematics Gateway   │
+                               │ Mosquitto / Hono /      │
+                               │ Traccar Multi-Protocol  │
+                               └────────────┬────────────┘
+                                            │
+                               ┌────────────▼────────────┐
+                               │ ⚡ Event Streaming      │
+                               │ Apache Kafka / Flink    │
+                               └────────────┬────────────┘
+                                            │
+                     ┌──────────────────────┼──────────────────────┐
+                     │                      │                      │
+              ┌──────▼──────┐        ┌──────▼──────┐        ┌──────▼──────┐
+              │ 🏁 Trip     │        │ 🗺️ Geospatial│        │ 📊 Sensor &  │
+              │ Detection   │        │ Map Match   │        │ Feature Extr │
+              │ Engine      │        │ OSRM/Valhalla│       │ Harsh Braking│
+              └──────┬──────┘        └──────┬──────┘        └──────┬──────┘
+                     │                      │                      │
+                     └──────────────────────┼──────────────────────┘
+                                            │
+                               ┌────────────▼────────────┐
+                               │ 🗄️ Spatial Data Store   │
+                               │ PostgreSQL + PostGIS    │
+                               │ + Uber H3 Spatial Index │
+                               └────────────┬────────────┘
+                                            │
+                               ┌────────────▼────────────┐
+                               │ 🧠 AI Risk Engine       │
+                               │ insurance-telematics    │
+                               │ XGBoost / LightGBM /    │
+                               │ PyTorch / Scikit-Learn  │
+                               └────────────┬────────────┘
+                                            │
+                     ┌──────────────────────┼──────────────────────┐
+                     │                      │                      │
+              ┌──────▼──────┐        ┌──────▼──────┐        ┌──────▼──────┐
+              │ 💰 UBI /    │        │ 💥 Crash /  │        │ 🏆 Driver    │
+              │ PHYD Price  │        │ FNOL Claims │        │ Coaching &   │
+              │ Discounts   │        │ Triage      │        │ Rewards App  │
+              └──────┬──────┘        └──────┬──────┘        └──────┬──────┘
+                     │                      │                      │
+                     └──────────────────────┼──────────────────────┘
+                                            │
+                               ┌────────────▼────────────┐
+                               │ 📈 Insurer Analytics    │
+                               │ Grafana / Superset BI   │
+                               │ Loss Ratio / Exposure   │
+                               └─────────────────────────┘
+```
 
-The open-source ecosystem is particularly strong in mobile sensing, GPS tracking, OBD-II/CAN access, fleet telematics, geospatial processing, machine learning, and streaming infrastructure. It is much weaker in complete insurer-grade UBI platforms with production-ready policy integration, actuarial pricing workflows, regulatory tooling, consent management, claims integration, and large-scale connected-vehicle data partnerships.
+---
 
-The most promising open-source path is therefore usually to combine specialized components into a unified telematics-insurance platform rather than expect one project to replace Cambridge Mobile Telematics, Octo, Arity, or DriveQuant end-to-end.
+## ⭐ Star History
 
-How to Contribute
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Telematics-Insurance-Platform&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Telematics-Insurance-Platform&type=date&legend=top-left)
 
-Fork the repo.
+---
 
-Add/edit entries in README.md (follow existing format).
+## 🤝 How to Contribute
 
-Include: name, official/GitHub link, 1–2 sentence description, and whether it's SaaS or open-source.
+We welcome community contributions! Follow these steps to submit additions or updates:
 
-For open-source entries, verify the repository's current license and maintenance status.
+1. 🍴 **Fork the repository**.
+2. 🌿 **Create a feature branch**: `git checkout -b feature/add-telematics-tool`.
+3. 📝 **Add or update entries** in [README.md](README.md) following the existing table or list formatting.
+   - For **SaaS entries**: include company size (valuation/revenue), specific starting tier pricing, and free tier/trial limits.
+   - For **Open-Source entries**: include name, stargazers link badge with `style=social&color=white`, official repository link, and license.
+4. 🚀 **Submit a Pull Request** with a clear explanation of the platform or tool.
 
-Prefer projects with documented APIs, reproducible deployments, active development, and clear licensing.
+---
 
-Submit PR with a short explanation.
+## ⚠️ Disclaimer
 
-Star the repo if you find it useful!
+This repository is a community-curated directory intended for educational, technical, and informational purposes. Mention of commercial vendors or open-source projects does not constitute an endorsement. Usage-based insurance programs, driver telematics, and crash detection models must comply with regional insurance regulations, privacy standards (GDPR/CCPA), and automotive data protection laws.
 
-Disclaimer
+---
 
-This is a community-curated list — not exhaustive and not an endorsement.
-
-Some projects listed under Open-Source are complete telematics applications, while others are mobile SDKs, GPS trackers, OBD/CAN libraries, routing engines, machine-learning frameworks, or infrastructure components.
-
-Open-source components generally require substantial integration before they can provide the actuarial, regulatory, privacy, claims, and insurance-platform functionality of commercial telematics providers.
-
-Usage-based insurance models must comply with applicable insurance, privacy, data-protection, telecommunications, and automotive regulations.
-
-Telematics data can be highly sensitive. Production deployments should implement appropriate consent management, encryption, access controls, retention policies, anonymization/pseudonymization, and audit logging.
-
-Always verify the current license, project activity, security posture, and production readiness before deployment.
-
-Risk models should be validated for statistical robustness, fairness, explainability, calibration, and jurisdiction-specific insurance requirements.
-
-Made for insurers, actuaries, mobility companies, automotive OEMs, fleet operators, connected-car developers, data scientists, and insurance technologists.
-Let's make telematics insurance more open, programmable, explainable, and data-driven.
+<div align="center">
+  <sub>Built with ❤️ for the Global Telematics & Connected Insurance Community.</sub>
+</div>

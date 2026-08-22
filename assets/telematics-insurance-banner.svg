@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#06101e" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 42px;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      fill: #94a3b8;
+      letter-spacing: 0.8px;
+    }
+    .badge-pill {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .pulse-circle {
+      animation: pulseAnim 3s ease-in-out infinite alternate;
+    }
+    .radar-sweep {
+      transform-origin: 1020px 190px;
+      animation: rotateRadar 8s linear infinite;
+    }
+    .wave-pulse-1 {
+      transform-origin: 1020px 190px;
+      animation: waveExpand 3.5s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+    }
+    .wave-pulse-2 {
+      transform-origin: 1020px 190px;
+      animation: waveExpand 3.5s cubic-bezier(0.25, 1, 0.5, 1) infinite 1.75s;
+    }
+    .dash-stream {
+      stroke-dasharray: 8 6;
+      animation: streamFlow 20s linear infinite;
+    }
+    .shimmer-badge {
+      animation: shimmerGlow 4s ease-in-out infinite alternate;
+    }
+    
+    @keyframes rotateRadar {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes waveExpand {
+      0% { r: 25px; opacity: 0.8; stroke-width: 2.5px; }
+      100% { r: 120px; opacity: 0; stroke-width: 0.5px; }
+    }
+    @keyframes pulseAnim {
+      0% { opacity: 0.3; transform: scale(0.98); }
+      100% { opacity: 0.8; transform: scale(1.02); }
+    }
+    @keyframes streamFlow {
+      from { stroke-dashoffset: 200; }
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes shimmerGlow {
+      0% { filter: drop-shadow(0 0 4px rgba(56, 189, 248, 0.3)); }
+      100% { filter: drop-shadow(0 0 12px rgba(99, 102, 241, 0.6)); }
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="380" rx="16" fill="url(#bgGrad)" />
+  <rect width="1200" height="380" rx="16" fill="none" stroke="#1e293b" stroke-width="2" />
+
+  <!-- Abstract Tech Grid Lines -->
+  <g opacity="0.12" stroke="#38bdf8" stroke-width="1">
+    <line x1="0" y1="76" x2="1200" y2="76" />
+    <line x1="0" y1="152" x2="1200" y2="152" />
+    <line x1="0" y1="228" x2="1200" y2="228" />
+    <line x1="0" y1="304" x2="1200" y2="304" />
+    <line x1="200" y1="0" x2="200" y2="380" />
+    <line x1="400" y1="0" x2="400" y2="380" />
+    <line x1="600" y1="0" x2="600" y2="380" />
+    <line x1="800" y1="0" x2="800" y2="380" />
+    <line x1="1000" y1="0" x2="1000" y2="380" />
+  </g>
+
+  <!-- Glowing Flow Paths -->
+  <path d="M 50 320 Q 300 240 550 300 T 1020 190" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.4" class="dash-stream" />
+  <path d="M 80 340 Q 400 180 700 260 T 1020 190" fill="none" stroke="#6366f1" stroke-width="2" opacity="0.3" class="dash-stream" />
+  <path d="M 30 100 Q 350 70 650 140 T 1020 190" fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.35" class="dash-stream" />
+
+  <!-- Radar / Telematics Sensor Telemetry Graphic -->
+  <g id="telematics-radar">
+    <circle cx="1020" cy="190" r="130" fill="none" stroke="#1e293b" stroke-width="1.5" />
+    <circle cx="1020" cy="190" r="95" fill="none" stroke="#334155" stroke-width="1.5" />
+    <circle cx="1020" cy="190" r="60" fill="none" stroke="#38bdf8" stroke-width="1" opacity="0.4" />
+    <circle cx="1020" cy="190" r="25" fill="#0f172a" stroke="#6366f1" stroke-width="2" />
+
+    <circle cx="1020" cy="190" class="wave-pulse-1" fill="none" stroke="#38bdf8" />
+    <circle cx="1020" cy="190" class="wave-pulse-2" fill="none" stroke="#10b981" />
+
+    <g class="radar-sweep">
+      <path d="M 1020 190 L 930 100 A 130 130 0 0 1 1020 60 Z" fill="url(#accentGrad)" opacity="0.18" />
+      <line x1="1020" y1="190" x2="930" y2="100" stroke="#38bdf8" stroke-width="2" filter="url(#softGlow)" />
+    </g>
+
+    <g transform="translate(1008, 178)">
+      <path d="M4 14 L7 5 C8 3 16 3 17 5 L20 14 L22 17 L2 17 Z" fill="#38bdf8" opacity="0.9" />
+      <circle cx="6" cy="19" r="2.5" fill="#e2e8f0" />
+      <circle cx="18" cy="19" r="2.5" fill="#e2e8f0" />
+      <circle cx="12" cy="7" r="1.5" fill="#ffffff" />
+    </g>
+
+    <circle cx="950" cy="130" r="4" fill="#38bdf8" filter="url(#softGlow)" />
+    <circle cx="1090" cy="140" r="3.5" fill="#10b981" filter="url(#softGlow)" />
+    <circle cx="970" cy="260" r="4.5" fill="#6366f1" filter="url(#softGlow)" />
+    <circle cx="1080" cy="245" r="3" fill="#f59e0b" filter="url(#softGlow)" />
+
+    <rect x="940" y="325" width="160" height="28" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="1020" y="344" text-anchor="middle" font-family="monospace" font-size="12" fill="#38bdf8">PHYD SCORE: 98.4 A+</text>
+  </g>
+
+  <!-- Main Branding & Header Content -->
+  <g transform="translate(70, 75)">
+    <g class="shimmer-badge">
+      <rect x="0" y="0" width="280" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" opacity="0.9" />
+      <circle cx="14" cy="14" r="5" fill="#10b981" />
+      <text x="28" y="19" fill="#38bdf8" class="badge-pill">CONNECTED INSURANCE ECOSYSTEM</text>
+    </g>
+
+    <text x="0" y="75" class="title-text">
+      Awesome Telematics
+    </text>
+    <text x="0" y="125" class="title-text" fill="url(#accentGrad)">
+      Insurance Platform
+    </text>
+
+    <text x="0" y="165" class="subtitle-text">
+      Curated Hub for UBI • PAYD • PHYD • Driver Risk AI • IoT Fleets
+    </text>
+
+    <g transform="translate(0, 195)">
+      <rect x="0" y="0" width="145" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="15" y="21" fill="#e2e8f0" class="badge-pill">🚗 UBI / PAYD / PHYD</text>
+
+      <rect x="155" y="0" width="160" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="170" y="21" fill="#e2e8f0" class="badge-pill">⚡ Driver Risk AI &amp; HMM</text>
+
+      <rect x="325" y="0" width="150" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="340" y="21" fill="#e2e8f0" class="badge-pill">📡 OBD-II / CAN Telemetry</text>
+
+      <rect x="485" y="0" width="160" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="500" y="21" fill="#e2e8f0" class="badge-pill">🌐 SaaS + Open-Source</text>
+    </g>
+  </g>
+</svg>
