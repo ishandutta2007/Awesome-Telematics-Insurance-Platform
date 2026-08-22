@@ -1,7 +1,7 @@
 # Awesome-Telematics-Insurance-Platform
 
 Markdown
-# Top Telematics Insurance Platform Ecosystem
+## Top Telematics Insurance Platform Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Usage-Based Insurance (UBI), Pay-As-You-Drive (PAYD), Pay-How-You-Drive (PHYD), Driving Risk Analytics & Connected Insurance*  
